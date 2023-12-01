@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../src/img.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Title {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    color: #f9ceaf;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.383);
+}
+
+.mainBox {
+    background-color: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 630px;
+    height: 870px;
+    padding: 2% 10%;
+    border: 2px solid rgba(0, 0, 0, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+} 
+
+form {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 80%;
+    padding: 3%;
+}
+
+form input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1.1em;
+    color: #ffeceb;
+    border-radius: 15px;
+    border: 2px solid rgba(222, 185, 151, 0.383);
+    padding: 10px 23.5px 10px 20px;
+}
+
+form .name {
+    display: inline-block;
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: #ffeceb;
+    border: 2px solid rgba(222, 185, 151, 0.383);
+    padding: 10px 23.5px 10px 20px;
+}
+
+form input::placeholder {
+    color: #ffe4d0;
+}
+
+form p {
+    text-align: center;
+    font-size: 1.1em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.383);
+    color: #f9ceaf;
+}
+
+form .btn1 {
+    display: inline-block;
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ffeceb;
+    background-color: #8F664A;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: #ffebcd;
+    border-radius: 15px;
+    transition: 0.8s ease;
+}
+
+form .btn1:hover {
+    background-color: #E4AE7E;
+    color: #312220;
+    transform: scale(1.05);
+}
+
+form input:invalid {
+    color: rgb(168, 25, 0);
+}
+
+form input:focus {
+    color: #ffeceb;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+pop-up {
+    position: relative;
+    display: flex;
+    margin: -75% 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 500px;
+    height: 610px;
+    padding: 4%;
+    border: 1px solid rgba(0, 0, 0, .2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    z-index: 3;
+    transition: all 0.29s ease;
+}
+
+.pop {
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.01);
+}
+
+.openPop {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+pop-up h2 {
+    font-size: 2.0em;
+    font-weight: 400;
+    text-align: center;
+    color: #f9ceaf;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.383);
+}
+
+pop-up .result {
+    text-align: center;
+    font-size: 1.2em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.383);
+    color: #d3a482;   
+}
+
+pop-up i {
+    font-size: 90px;
+    color: #e4ae7eed;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+pop-up p {
+    text-align: left;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 5%;
+    font-size: 0.8em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.383);
+    color: #ffddbe;
+}
+
+pop-up p .gpa {
+    text-align: left;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 5%;
+    font-size: 1.1em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.539);
+    color: #ffddbe;
+}
+
+pop-up .btn2 {
+    display: inline-block;
+    margin: 10px;
+    margin-top: 80px;
+    width: 100%;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ffeceb;
+    background-color: #8F664A;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: #ffebcd;
+    border-radius: 15px;
+    transition: 0.8s ease;
+}
+
+.btn2:hover {
+    background-color: #E4AE7E;
+    color: #312220;
+    transform: scale(1.05);
+}

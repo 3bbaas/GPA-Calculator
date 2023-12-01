@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="src/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>GPA Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="mainBox" id="mainBox">
+            <h1 class="Title">GPA Calculator</h1>
+            <form id="run">
+                <input class="name" id="n2" type="text" placeholder="Your Name">
+                <p>Enter your course grades</p>
+                <input type="number" id="g1" placeholder="Grade 1" min="0" max="100" step="1" required>
+                <input type="number" id="g2" placeholder="Grade 2" min="0" max="100" step="1" required>
+                <input type="number" id="g3" placeholder="Grade 3" min="0" max="100" step="1" required>
+                <input type="number" id="g4" placeholder="Grade 4" min="0" max="100" step="1" required>
+                <input type="number" id="g5" placeholder="Grade 5" min="0" max="100" step="1" required>
+                <input type="number" id="g6" placeholder="Grade 6" min="0" max="100" step="1" required>
+                <button class="btn1" onclick="openPop(); return false;">Click-me</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        <pop-up class="pop" id="pop">
+            <!-- <h2>Congratulations</h2> -->
+            <i class="fa-solid fa-question fa-beat-fade"></i>
+            <p class="result"><span class="name2"></span>'s' GPA is <span class="gpa"> </span></p>
+            <p>Exam results are not just a measure of your academic abilities; they reflect your dedication, resilience, and the journey of growth. 
+                Regardless of the outcome, remember that success is not defined by a single moment but by the continuous pursuit of knowledge and
+                personal development.</p>
+            <button class="btn2" onclick="closePop()">Close</button>
+        </pop-up>    
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>
